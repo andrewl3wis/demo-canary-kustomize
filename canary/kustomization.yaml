@@ -1,0 +1,5 @@
+bases:
+- ./../base
+namePrefix: canary-
+patches:
+  - deployment.yaml
