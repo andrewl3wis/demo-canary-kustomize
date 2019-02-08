@@ -2,5 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.nginx: glob:mainline*
 spec:
   replicas: 2

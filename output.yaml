@@ -1,6 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.nginx: glob:mainline*
   name: canary-nginx-deployment
 spec:
   replicas: 2
