@@ -4,6 +4,6 @@ metadata:
   name: nginx-deployment
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.nginx: glob:mainline*
+    flux.weave.works/tag.nginx: glob:1.15.*
 spec:
   replicas: 2

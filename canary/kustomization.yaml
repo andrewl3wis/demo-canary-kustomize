@@ -3,3 +3,6 @@ bases:
 namePrefix: canary-
 patches:
   - deployment.yaml
+images:
+  - name: nginx
+    newTag: 1.15.8

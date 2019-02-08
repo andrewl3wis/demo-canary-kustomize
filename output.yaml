@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.nginx: glob:mainline*
+    flux.weave.works/tag.nginx: glob:1.15.*
   name: canary-nginx-deployment
 spec:
   replicas: 2
@@ -16,7 +16,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:1.7.9
+      - image: nginx:1.15.8
         name: nginx
         ports:
         - containerPort: 80
